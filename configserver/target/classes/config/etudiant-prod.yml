@@ -1,0 +1,16 @@
+# -------------------------------------------------------
+# etudiant-prod.yml — profil PROD de etudiant-microservice
+# URL Config Server : http://localhost:9999/etudiant/prod
+# -------------------------------------------------------
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+build:
+  version: "2.0"
+
+author:
+  name: "Mohamed Yassine Laribi [PROD]"
+  email: "votre.email@example.com"

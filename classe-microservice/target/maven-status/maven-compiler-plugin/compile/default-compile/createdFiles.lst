@@ -1,0 +1,10 @@
+com\laribi\classe\dto\ClasseDto$ClasseDtoBuilder.class
+com\laribi\classe\dto\ClasseDto.class
+com\laribi\classe\repos\ClasseRepository.class
+com\laribi\classe\entities\Classe.class
+com\laribi\classe\service\ClasseServiceImpl.class
+com\laribi\classe\service\ClasseService.class
+com\laribi\classe\restControllers\ClasseController.class
+com\laribi\classe\config\Configuration.class
+com\laribi\classe\ClasseApplication.class
+com\laribi\classe\entities\Classe$ClasseBuilder.class

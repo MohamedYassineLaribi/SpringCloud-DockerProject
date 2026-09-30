@@ -1,0 +1,31 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: configserver
+
+  # -------------------------------------------------------
+  # "native" = lire les fichiers depuis classpath ou filesystem
+  # (pas depuis Git)
+  # Pour basculer vers Git → changer en "git" (voir PARTIE 14)
+  # -------------------------------------------------------
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        # Backend natif (filesystem)
+        native:
+          # Utilise le dossier config-repo relatif au projet
+          search-locations: "classpath:/config"
+
+# -------------------------------------------------------
+# Actuator : permet de vérifier que Config Server est UP
+# -------------------------------------------------------
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

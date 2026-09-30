@@ -1,0 +1,11 @@
+# -------------------------------------------------------
+# etudiant.yml — profil DEFAULT de etudiant-microservice
+# URL Config Server : http://localhost:9999/etudiant/default
+# -------------------------------------------------------
+
+build:
+  version: "1.0"
+
+author:
+  name: "Etudiant Microservice"
+  email: "etudiant@example.com"

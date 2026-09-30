@@ -1,0 +1,12 @@
+# -------------------------------------------------------
+# classe.yml — profil DEFAULT de classe-microservice
+# Utilisé quand aucun profil spécifique n'est activé.
+# URL Config Server : http://localhost:9999/classe/default
+# -------------------------------------------------------
+
+build:
+  version: "1.0"
+
+author:
+  name: "Classe Microservice"
+  email: "classe@example.com"

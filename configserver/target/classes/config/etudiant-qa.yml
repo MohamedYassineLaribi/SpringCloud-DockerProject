@@ -1,0 +1,16 @@
+# -------------------------------------------------------
+# etudiant-qa.yml — profil QA de etudiant-microservice
+# URL Config Server : http://localhost:9999/etudiant/qa
+# -------------------------------------------------------
+
+spring:
+  config:
+    activate:
+      on-profile: qa
+
+build:
+  version: "3.0"
+
+author:
+  name: "Mohamed Yassine Laribi [QA]"
+  email: "votre.email@example.com"

@@ -1,0 +1,17 @@
+# -------------------------------------------------------
+# classe-prod.yml — profil PROD de classe-microservice
+# Activé si spring.profiles.active=prod dans classe-microservice.
+# URL Config Server : http://localhost:9999/classe/prod
+# -------------------------------------------------------
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+build:
+  version: "2.0"
+
+author:
+  name: "Mohamed Yassine Laribi [PROD]"
+  email: "votre.email@example.com"

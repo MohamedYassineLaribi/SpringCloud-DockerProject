@@ -1,0 +1,48 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: gatewayserver
+
+  # Désactiver Spring Cloud Config (pas de configserver pour l'instant)
+  cloud:
+    config:
+      enabled: false
+
+    # Activer la découverte de services
+    discovery:
+      enabled: true
+
+    gateway:
+      # -------------------------------------------------------
+      # PARTIE 2 : Routage automatique via Eureka
+      # Chaque service Eureka devient automatiquement une route :
+      #   CLASSE   → http://localhost:8888/classe/...
+      #   ETUDIANT → http://localhost:8888/etudiant/...
+      # -------------------------------------------------------
+      discovery:
+        locator:
+          enabled: true
+          # Transforme CLASSE → classe (minuscules dans l'URL)
+          lower-case-service-id: true
+
+# Connexion à Eureka Server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+# -------------------------------------------------------
+# Actuator : expose /actuator/gateway/routes
+# -------------------------------------------------------
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true

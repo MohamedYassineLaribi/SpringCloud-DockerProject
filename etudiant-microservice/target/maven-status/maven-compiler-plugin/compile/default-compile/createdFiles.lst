@@ -1,0 +1,14 @@
+com\laribi\etudiant\restControllers\EtudiantController.class
+com\laribi\etudiant\dto\ClasseDto.class
+com\laribi\etudiant\service\EtudiantServiceImpl.class
+com\laribi\etudiant\dto\EtudiantDto.class
+com\laribi\etudiant\repos\EtudiantRepository.class
+com\laribi\etudiant\dto\APIResponseDto.class
+com\laribi\etudiant\EtudiantApplication.class
+com\laribi\etudiant\entities\Etudiant$EtudiantBuilder.class
+com\laribi\etudiant\dto\APIResponseDto$APIResponseDtoBuilder.class
+com\laribi\etudiant\dto\ClasseDto$ClasseDtoBuilder.class
+com\laribi\etudiant\dto\EtudiantDto$EtudiantDtoBuilder.class
+com\laribi\etudiant\entities\Etudiant.class
+com\laribi\etudiant\service\EtudiantService.class
+com\laribi\etudiant\service\APIClient.class

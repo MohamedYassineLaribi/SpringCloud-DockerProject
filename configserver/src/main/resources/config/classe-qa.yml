@@ -1,0 +1,17 @@
+# -------------------------------------------------------
+# classe-qa.yml — profil QA de classe-microservice
+# Activé si spring.profiles.active=qa dans classe-microservice.
+# URL Config Server : http://localhost:9999/classe/qa
+# -------------------------------------------------------
+
+spring:
+  config:
+    activate:
+      on-profile: qa
+
+build:
+  version: "3.0"
+
+author:
+  name: "Mohamed Yassine Laribi [QA]"
+  email: "votre.email@example.com"
